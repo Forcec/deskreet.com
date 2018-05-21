@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Лаба #2 - Дискретная математика</title>
+    <link rel="stylesheet" href="style/styles.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+</head>
+<body>
+<div id="wrapper" >
+    <a href="index.html"><img src="images/logo.png" width="282" height="75"></a>
+    <h1>#2</h1>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li class="active"><a>Лабы по дискретке</a><ul>
+                <li><a href="first.html">Лаба #1</a></li>
+                <li><a href="second.html">Лаба #2</a></li>
+                <li><a href="third.html">Лаба #3</a></li>
+                <li><a href="fourth.php">Лаба #4</a></li>
+                <li><a href="fifth.php">Лаба #5</a></li>
+            </ul>
+            </li>
+            <li><a href="game.html">Игра [JS/PHP]</a></li>
+        </ul>
+    </nav>
+    <div id="heading">
+    </div>
+
+    <section class="calc">
+        <div class="heading">
+            <h1>Дискретная математика</h1>
+            <br><br>
+        </div>
+        <ul class="info">
+            <li>Лабораторная работа #2</li>
+            <li>Введите матрицу n x n, разделяя элементы пробелами</li>
+        </ul>
+        <textarea id="text" class="multi" placeholder="Матрица"></textarea>
+        <textarea id="result" class="absolute" style="position: static" readonly></textarea>
+        <div class="button" onclick="checkSymmetry( getData() )">Симметричность</div>
+        <div class="button" onclick="checkBackSymmetry( getData() )">Кососимметричность</div>
+        <div class="button" onclick="checkReflex( getData() )">Рефлексивность</div>
+        <div class="button" onclick="checkTransition( getData() )">Транзитивность</div>
+        <br><br><br><br><br>
+
+    </section>
+</div>
+<footer>
+    <div id="footer">
+
+        <div id="sitemap">
+            <h3>MAP</h3>
+            <div>
+                <a href="index.html">Главная</a>
+                <a href="aboutme.html">Обо мне</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+        <div id="social">
+            <h3>SOCIAL NETWORKS</h3>
+            <a href="http://twitter.com/" class="social-icon twitter"></a>
+            <a href="http://facebook.com/" class="social-icon facebook"></a>
+            <a href="http://plus.google.com/" class="social-icon google-plus"></a>
+            <a href="https://vk.com/chemical_rage" class="vk"></a>
+        </div>
+        <div id="footer-logo">
+            <a href="index.html"><img src="images/footer-logo.png" width="165px" height="45px" alt=""></a>
+            <p>notCopyright &copy; 2018. </p>
+        </div>
+    </div>
+</footer>
+<script src="scripts/secondLab.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿.carousel {
+  position : relative;
+  margin : 0 auto;
+  width : 930px;
+  height : auto;
+  border : none;
+  overflow : visible;
+}
+
+.carousel .slides .slideItem {
+  position : absolute;
+  cursor : pointer;
+  overflow : hidden;
+  padding : 0;
+  margin : 0;
+  border : none;
+}
+
+.carousel .slides .slideItem a {
+  display: block;
+  text-decoration : none;
+  margin : 0;
+  padding : 0;
+  border : none;
+  outline : none;
+}
+
+.carousel .slides .slideItem img {
+  margin : 0;
+  padding : 0;
+  border : none;
+  width : 100%;
+  height : 100%;
+}
+
+.carousel .nextButton {
+  position : absolute;
+  right : 10px;
+  top : 140px;
+  width : 45px;
+  height : 45px;
+  background : url("../images/next_button.png") no-repeat center;
+  cursor : pointer;
+  z-index : 999;
+}
+
+.carousel .prevButton {
+  position : absolute;
+  left : 8px;
+  top : 140px;
+  width : 45px;
+  height: 45px;
+  background : url("../images/prev_button.png") no-repeat center;
+  cursor : pointer;
+  z-index : 999;
+}

@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Лаба #1 - Дискретная математика</title>
+    <link rel="stylesheet" href="style/styles.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+</head>
+<body>
+<div id="wrapper" >
+    <a href="index.html"><img src="images/logo.png" width="282" height="75"></a>
+    <h1>#1</h1>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li class="active"><a>Лабы по дискретке</a><ul>
+                <li><a href="first.html">Лаба #1</a></li>
+                <li><a href="second.html">Лаба #2</a></li>
+                <li><a href="third.html">Лаба #3</a></li>
+                <li><a href="fourth.php">Лаба #4</a></li>
+                <li><a href="fifth.php">Лаба #5</a></li>
+            </ul>
+            </li>
+            <li><a href="game.html">Игра [JS/PHP]</a></li>
+        </ul>
+    </nav>
+    <div id="heading">
+    </div>
+
+    <section class="calc">
+        <div class="heading">
+            <h1>Дискретная математика</h1>
+            <br><br>
+        </div>
+        <ul class="info">
+            <li>Лабораторная работа #1</li>
+            <li>Формат ввода данных: четная цифра, нечетная цифра, буква, буква [ijbb]</li>
+        </ul>
+        <textarea class="multi" id="text" placeholder="Первое множество[A]"></textarea>
+        <textarea class="multi" id="text2" placeholder="Второе множество[B]"></textarea>
+        <textarea class="multi" id="text3" placeholder="Универсальное множество[E]"></textarea>
+        <textarea id="result" class="absolute" readonly></textarea>
+        <div class="button" onclick="cross('text', 'text2')">Объединение</div>
+        <div class="button" onclick="unite()">Пересечение</div>
+        <div class="button" onclick="symmDiff()">Симметрическая разность</div>
+        <div class="button" onclick="plus('text2', 'text')">Дополнение А относительно В</div>
+        <div class="button" onclick="plus('text', 'text2')">Дополнение В относительно А</div>
+        <div class="button" onclick="plus('text3', 'text')">Отрицание А</div>
+        <div class="button" onclick="plus('text3', 'text2')">Отрицание В</div>
+
+    </section>
+</div>
+<footer>
+    <div id="footer">
+
+        <div id="sitemap">
+            <h3>MAP</h3>
+            <div>
+                <a href="index.html">Главная</a>
+                <a href="aboutme.html">Обо мне</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+        <div id="social">
+            <h3>SOCIAL NETWORKS</h3>
+            <a href="http://twitter.com/" class="social-icon twitter"></a>
+            <a href="http://facebook.com/" class="social-icon facebook"></a>
+            <a href="http://plus.google.com/" class="social-icon google-plus"></a>
+            <a href="https://vk.com/chemical_rage" class="vk"></a>
+        </div>
+        <div id="footer-logo">
+            <a href="index.html"><img src="images/footer-logo.png" width="165px" height="45px" alt=""></a>
+            <p>notCopyright &copy; 2018. </p>
+        </div>
+    </div>
+</footer>
+<script src="scripts/firstLab.js"></script>
+</body>
+</html>

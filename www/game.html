@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aterix - лабораторные работы по вебу и дикретной математике</title>
+    <link rel="stylesheet" href="style/forGame.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300" type="text/css">
+</head>
+<body>
+<div id="wrapper" >
+    <a href="index.html"><img src="images/logo.png" width="282" height="75"></a>
+    <h1>#5</h1>
+    <nav>
+        <ul class="top-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li id="tec"><a>Лабы по дискретке</a><ul>
+                <li><a href="first.html">Лаба #1</a></li>
+                <li><a href="second.html">Лаба #2</a></li>
+                <li><a href="third.html">Лаба #3</a></li>
+                <li><a href="fourth.php">Лаба #4</a></li>
+                <li><a href="fifth.php">Лаба #5</a></li>
+            </ul>
+            </li>
+            <li  class="active"><a href="game.html">Игра[JS/PHP]</a></li>
+        </ul>
+    </nav>
+    <div id="heading">
+    </div>
+
+    <section class="calc">
+        <div class="heading">
+            <h1>Крестики-нолики</h1>
+            <br><br>
+        </div>
+        <ul class="info">
+            <li>Лабораторная работа #5 (Игра)</li>
+            <li>Игроки по очереди ставят на свободные клетки поля 3х3 знаки (один всегда крестики, другой всегда нолики)</li>
+            <li>Первый, выстроивший в ряд 3 своих фигуры по вертикали, горизонтали или диагонали, выигрывает</li>
+            <li>Первый ход делает игрок, ставящий крестики</li>
+        </ul>
+        <div class="container" id="main">
+            <span id="turn">Игра</span>
+            <!-- show X or O on div click -->
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+        </div>
+        <!-- Play Again And Reset All Info -->
+        <button id = "play" onclick="replay(this)">Начать заново!</button>
+        <table id="statistic" class="table_col">
+            <colgroup>
+                <col style="background: dodgerblue;">
+            </colgroup>
+            <tr>
+                <th>Шаг #</th>
+                <td id="steps">0</td>
+            </tr>
+            <tr>
+                <th>Сыграно игр:</td>
+                <td id="gameplayed">0</td>
+            </tr>
+            <tr>
+                <th>Побед крестиков:</th>
+                <td id="xWin">0</td>
+            </tr>
+            <tr>
+                <th>Побед ноликов:</th>
+                <td id="oWin">0</td>
+            </tr>
+            <tr>
+                <th>Ничьих:</th>
+                <td id="noOneWin">0</td>
+            </tr>
+
+        </table>
+
+    </section>
+</div>
+<footer>
+    <div id="footer">
+
+        <div id="sitemap">
+            <h3>MAP</h3>
+            <div>
+                <a href="index.html">Главная</a>
+                <a href="aboutme.html">Обо мне</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+        <div id="social">
+            <h3>SOCIAL NETWORKS</h3>
+            <a href="http://twitter.com/" class="social-icon twitter"></a>
+            <a href="http://facebook.com/" class="social-icon facebook"></a>
+            <a href="http://plus.google.com/" class="social-icon google-plus"></a>
+            <a href="https://vk.com/chemical_rage" class="vk"></a>
+        </div>
+        <div id="footer-logo">
+            <a href="index.html"><img src="images/footer-logo.png" width="165px" height="45px" alt=""></a>
+            <p>notCopyright &copy; 2018. </p>
+        </div>
+    </div>
+    <br>
+</footer>
+<script src="scripts/game.js"></script>
+</body>
+</html>
